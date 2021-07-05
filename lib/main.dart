@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
             child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             CircleAvatar(
               radius: 50.0,
@@ -38,52 +39,38 @@ class MyApp extends StatelessWidget {
                   letterSpacing: 2.5,
                   fontWeight: FontWeight.bold),
             ),
-            Container(
-              padding: EdgeInsets.all(10.0),
-              color: Colors.white,
-              margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-              child: Row(
-                children: [
-                  Icon(
+            Card(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                child: ListTile(
+                  leading: Icon(
                     Icons.phone,
                     color: Colors.teal,
                   ),
-                  SizedBox(
-                    width: 10.0,
-                  ),
-                  Text(
+                  title: Text(
                     '+61 123 3349435',
                     style: TextStyle(
                         color: Colors.teal.shade900,
                         fontFamily: 'Source Sans Pro',
                         fontSize: 20.0),
                   ),
-                ],
-              ),
-            ),
-            Container(
-              padding: EdgeInsets.all(10.0),
-              color: Colors.white,
-              margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-              child: Row(
-                children: [
-                  Icon(
+                )),
+            Card(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                child: ListTile(
+                  leading: Icon(
                     Icons.email,
                     color: Colors.teal,
                   ),
-                  SizedBox(
-                    width: 10.0,
-                  ),
-                  Text(
+                  title: Text(
                     'henrylong719@gmail.com',
                     style: TextStyle(
                         color: Colors.teal.shade900,
                         fontFamily: 'Source Sans Pro',
                         fontSize: 20.0),
                   ),
-                ],
-              ),
-            )
+                ))
           ],
         )),
       ),
