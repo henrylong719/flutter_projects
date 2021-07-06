@@ -1,8 +1,8 @@
 #!/bin/sh
 # This is a generated file; do not edit or check into version control.
 export "FLUTTER_ROOT=/Users/henrylong/flutter2"
-export "FLUTTER_APPLICATION_PATH=/Users/henrylong/Desktop/flutter/dicee-flutter"
-export "FLUTTER_TARGET=/Users/henrylong/Desktop/flutter/dicee-flutter/lib/main.dart"
+export "FLUTTER_APPLICATION_PATH=/Users/henrylong/Desktop/flutter/flutter/flutter_projects/dicee-flutter"
+export "FLUTTER_TARGET=/Users/henrylong/Desktop/flutter/flutter/flutter_projects/dicee-flutter/lib/main.dart"
 export "FLUTTER_BUILD_DIR=build"
 export "SYMROOT=${SOURCE_ROOT}/../build/ios"
 export "FLUTTER_BUILD_NAME=1.0.0"
@@ -11,4 +11,4 @@ export "DART_DEFINES=flutter.inspector.structuredErrors%3Dtrue"
 export "DART_OBFUSCATION=false"
 export "TRACK_WIDGET_CREATION=true"
 export "TREE_SHAKE_ICONS=false"
-export "PACKAGE_CONFIG=/Users/henrylong/Desktop/flutter/dicee-flutter/.dart_tool/package_config.json"
+export "PACKAGE_CONFIG=/Users/henrylong/Desktop/flutter/flutter/flutter_projects/dicee-flutter/.dart_tool/package_config.json"
