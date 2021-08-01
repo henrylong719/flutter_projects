@@ -1,16 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:todoey_flutter/widgets/tasks_tile.dart';
 
-class TaskTile extends StatelessWidget {
+class TasksList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return ListTile(
-      title: Text('This is a task'),
-      trailing: Checkbox(
-        onChanged: (bool) {
-          print(bool);
-        },
-        value: false,
-      ),
+    return ListView(
+      children: [TaskTile()],
     );
   }
 }
