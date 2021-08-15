@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 void main() => runApp(XylophoneApp());
 
-void playSound(int soundNumber) {}
+// void playSound(int soundNumber) {}
 
 Expanded buildKey({Color color, int soundNumber}) {
   return Expanded(
@@ -13,6 +13,7 @@ Expanded buildKey({Color color, int soundNumber}) {
         final player = AudioCache();
         player.play('note$soundNumber.wav');
       },
+      child: null,
     ),
   );
 }
