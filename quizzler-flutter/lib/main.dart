@@ -81,7 +81,8 @@ class _QuizPageState extends State<QuizPage> {
             padding: EdgeInsets.all(15.0),
             child: TextButton(
               style: ButtonStyle(
-                  backgroundColor: MaterialStateProperty.all(Colors.green)),
+                backgroundColor: MaterialStateProperty.all(Colors.green),
+              ),
               child: Text(
                 'True',
                 style: TextStyle(
@@ -116,7 +117,6 @@ class _QuizPageState extends State<QuizPage> {
             ),
           ),
         ),
-        //TODO: Add a Row here as your score keeper
         Row(
           children: scoreKeeper,
         )
