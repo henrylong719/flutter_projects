@@ -45,26 +45,13 @@ class MyApp extends StatelessWidget {
               ),
             ),
             Card(
-              color: Colors.white,
-              margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-              child: ListTile(
-                  leading: Icon(
-                    Icons.phone,
-                    color: Colors.teal,
-                  ),
-                  title: TileText('+61 123 3349435')),
-            ),
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                child: TileText(Icons.phone, '+61 04233123423')),
             Card(
-              color: Colors.white,
-              margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-              child: ListTile(
-                leading: Icon(
-                  Icons.email,
-                  color: Colors.teal,
-                ),
-                title: TileText('henrylong719@gmail.com'),
-              ),
-            ),
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                child: TileText(Icons.email, 'henrylong719@gmail.com')),
           ],
         )),
       ),
@@ -73,18 +60,28 @@ class MyApp extends StatelessWidget {
 }
 
 class TileText extends StatelessWidget {
-  TileText(this.info);
+  TileText(
+    this.icon,
+    this.info,
+  );
 
   final String info;
+  final IconData icon;
 
   @override
   Widget build(BuildContext context) {
-    return Text(
-      info,
-      style: TextStyle(
-          color: Colors.teal.shade900,
-          fontFamily: 'Source Sans Pro',
-          fontSize: 20.0),
+    return ListTile(
+      leading: Icon(
+        icon,
+        color: Colors.teal,
+      ),
+      title: Text(
+        info,
+        style: TextStyle(
+            color: Colors.teal.shade900,
+            fontFamily: 'Source Sans Pro',
+            fontSize: 20.0),
+      ),
     );
   }
 }
