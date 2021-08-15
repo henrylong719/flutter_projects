@@ -5,8 +5,6 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -47,40 +45,46 @@ class MyApp extends StatelessWidget {
               ),
             ),
             Card(
-                color: Colors.white,
-                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                child: ListTile(
+              color: Colors.white,
+              margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+              child: ListTile(
                   leading: Icon(
                     Icons.phone,
                     color: Colors.teal,
                   ),
-                  title: Text(
-                    '+61 123 3349435',
-                    style: TextStyle(
-                        color: Colors.teal.shade900,
-                        fontFamily: 'Source Sans Pro',
-                        fontSize: 20.0),
-                  ),
-                )),
+                  title: TileText('+61 123 3349435')),
+            ),
             Card(
-                color: Colors.white,
-                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                child: ListTile(
-                  leading: Icon(
-                    Icons.email,
-                    color: Colors.teal,
-                  ),
-                  title: Text(
-                    'henrylong719@gmail.com',
-                    style: TextStyle(
-                        color: Colors.teal.shade900,
-                        fontFamily: 'Source Sans Pro',
-                        fontSize: 20.0),
-                  ),
-                ))
+              color: Colors.white,
+              margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+              child: ListTile(
+                leading: Icon(
+                  Icons.email,
+                  color: Colors.teal,
+                ),
+                title: TileText('henrylong719@gmail.com'),
+              ),
+            ),
           ],
         )),
       ),
+    );
+  }
+}
+
+class TileText extends StatelessWidget {
+  TileText(this.info);
+
+  final String info;
+
+  @override
+  Widget build(BuildContext context) {
+    return Text(
+      info,
+      style: TextStyle(
+          color: Colors.teal.shade900,
+          fontFamily: 'Source Sans Pro',
+          fontSize: 20.0),
     );
   }
 }
