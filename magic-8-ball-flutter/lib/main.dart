@@ -32,13 +32,17 @@ class _BallState extends State<Ball> {
       child: Row(
         children: [
           Expanded(
-              child: TextButton(
-                  onPressed: () {
-                    setState(() {
-                      ballNumber = Random().nextInt(5) + 1;
-                    });
+            child: TextButton(
+              onPressed: () {
+                setState(
+                  () {
+                    ballNumber = Random().nextInt(5) + 1;
                   },
-                  child: Image.asset('images/ball$ballNumber.png')))
+                );
+              },
+              child: Image.asset('images/ball$ballNumber.png'),
+            ),
+          )
         ],
       ),
     );
