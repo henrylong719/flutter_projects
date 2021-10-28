@@ -3,7 +3,6 @@ import 'package:flutter_complete_guide/models/transaction.dart';
 import 'package:flutter_complete_guide/widgets/chart.dart';
 import 'package:flutter_complete_guide/widgets/new_transaction.dart';
 import 'package:flutter_complete_guide/widgets/transaction_list.dart';
-import 'package:intl/intl.dart';
 
 void main() => runApp(MyApp());
 
